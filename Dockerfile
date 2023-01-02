@@ -1,7 +1,7 @@
 FROM python:3.8-slim-buster
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
+RUN apt update && apt upgrade 
+RUN apt install git 
 COPY requirements.txt /requirements.txt
 
 RUN cd /
